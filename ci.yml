@@ -21,4 +21,4 @@ jobs:
         run: nuget restore Uas.sln
 
       - name: Build
-        run: msbuild Uas.sln /p:Configuration=Release
+        rn: msbuild Uas.sln /p:Configuration=Release
