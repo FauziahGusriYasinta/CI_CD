@@ -1,9 +1,7 @@
-name: CI Build .NET Framework
+name: CI Test Gagal
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
     branches: [ master ]
 
 jobs:
@@ -11,8 +9,8 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Ini Pasti Gagal
+        run: exit 1
 
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
